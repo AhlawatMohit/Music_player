@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/dcbc537b4e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@200;400;700&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="media/emma.jpg" class="song-img" alt="song_thumbnail">
+        <h1>Bijlee Bijlee</h1>
+        <p>Hardy Sandhu & Palak Tiwari</p>
+
+        <audio id="song">
+            <source src="media/Bijlee_Bijlee.m4a" type="audio/mp4">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
